@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML>
+<html lang="ja">
+
+    <head>
+    
+        <meta charset="UTF-8">
+        <title>新規登録</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body>
+        
+        <form action="insert.php" method="post"enctype="multipart/form-data">
+        <h1 class="toroku">会員登録</h1>
+            <div>
+                <label>氏名</label>
+                <br>
+                <input type="text" class="text" name="user_name">
+            </div>
+            <div>
+                <label>メールアドレス</label>
+                <br>
+                <input type="text" class="text" size="35" name="mail">
+            </div>
+            <div>
+                <label>パスワード</label>
+                <br>
+                <input type="password" class="text" size="35" name="password">
+            </div>
+            <div>
+                <label>パスワード確認</label>
+                <br>
+                <input type="password" class="text" size="35" name="password">
+            </div>
+            <div>
+                <label>プロフィール写真</label>
+                <br>
+                <input type="hidden"name="max_file_size"value="5000000"/>
+                <input type="file" size="50" name="upfile">
+                <input type="submit" value="アップロード">
+            </div>
+            <div>
+                <label>コメント</label>
+                <br>
+                <input type="text" class="text" size="35" name="comments">
+            </div>
+            </form>
+    </body>
+</html>
+        
